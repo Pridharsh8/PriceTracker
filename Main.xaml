@@ -1,0 +1,264 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848.8,3175.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="80">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="810.4,3110.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="ov">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="5000" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="i">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="newvalue" />
+      <Variable x:TypeArguments="x:String" Name="mail" />
+      <Variable x:TypeArguments="x:Int32" Name="nv" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="748,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter Mail" Title="Mail">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[mail]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InterruptibleWhile Condition="[i&lt;&gt;0]" DisplayName="While" sap:VirtualizedContainerService.HintSize="748,2724.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="712.8,2557.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ Wa" sap:VirtualizedContainerService.HintSize="650.4,2448" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="49c9ce7c-fdb2-4413-9267-689912f5f57d" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608.8,2231.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Name="intVal" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'Special price'" sap:VirtualizedContainerService.HintSize="546.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="49c9ce7c-fdb2-4413-9267-689912f5f57d" ScrapingMethod="Fulltext" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/fastrack-revoltt-fs1-1-83-display-bt-calling-fastcharge-110-sports-mode-200-watchfaces-smartwatch/p/itmab38b5cb1e3fb?pid=SMWGN4YEWGNZ2GGM&amp;lid=LSTSMWGN4YEWGNZ2GGMLUF0DF&amp;marketplace=FLIPKART&amp;store=ajy%2Fbuh&amp;srno=b_1_1&amp;otracker=browse&amp;fm=organic&amp;iid=en_lAjZMeqCzMmH3zoaO1dJfmLV_tgmPITG_UZQoEEEECys5kmztuRpFAtGHEiMEvAwhMJcFfDk-Q6SomqxQLHh4PUFjCTyOHoHZs-Z5_PS_w0%3D&amp;ppt=browse&amp;ppn=browse&amp;ssid=krgr67gpts0000001729390223079" DesignTimeRectangle="795, 571, 107, 49" ElementType="Text" FriendlyName="'₹1,299'" FullSelectorArgument="&lt;webctrl aaname='₹1,299' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='container' tag='DIV' type='' /&gt;" Guid="bcbfba16-d7e3-4e6a-b34c-7a673a85f99f" InformativeScreenshot="72aea58d563437617a8ee86db1bf17a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ WatchFaces Smartwatch Price in India - Buy Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ WatchFaces Smartwatch online at Flipkart.com' /&gt;" SearchSteps="Selector, FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="795, 549, 104, 20" ElementType="Text" FriendlyName="'Special price'" FullSelectorArgument="&lt;webctrl aaname='Special price' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Special price' tag='SPAN' type='' check:text='Special price' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[newvalue]</OutArgument>
+                    </uix:NGetText.Text>
+                  </uix:NGetText>
+                  <Assign sap:VirtualizedContainerService.HintSize="546.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[newvalue]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(newvalue, "[^\d,]", "")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="546.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[newvalue]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[newvalue.Replace(",", "")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="546.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[intVal]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(newvalue)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.4,273.6" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,195.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[intVal]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <If Condition="[ov&lt;intVal]" sap:VirtualizedContainerService.HintSize="546.4,625.6" sap2010:WorkflowViewState.IdRef="If_4">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="496,435.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:Int32" Name="newv" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Price increased&quot;+newvalue.ToString]" DisplayName="Send SMTP Mail Message" Email="pridharsh2693@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,151.2" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Password="husk jphb ynpr lbcl" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Price tracker" To="[mail]">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[ov]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[intVal]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546.4,622.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                    <ui:IfElseIf.ConditionBlocks>
+                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                        <ui:IfElseIfBlock BlockType="If" Condition="[ov&gt;intVal]">
+                          <ui:IfElseIfBlock.Then>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,426.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Price Dropped&quot;+newvalue.ToString]" DisplayName="Send SMTP Mail Message" Email="pridharsh2693@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="False" Password="husk jphb ynpr lbcl" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Price Tracker" To="[mail]">
+                                <ui:SendMail.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                </ui:SendMail.Files>
+                              </ui:SendMail>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[ov]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[intVal]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                            </Sequence>
+                          </ui:IfElseIfBlock.Then>
+                        </ui:IfElseIfBlock>
+                      </sc:BindingList>
+                    </ui:IfElseIf.ConditionBlocks>
+                  </ui:IfElseIf>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAA2DSURBVGhDvZcHWFRXFsdHRcXKiGVAAQcEpUoXFaSIShGBmMRgEpBdvy/qt5Zdk3zrppHdaJoaiI2IPWqym8QSTVsFxgJJbDEmGzVZFQtiXCOjWIIM3rPn3PJ4A4Mlye75/H+n3Pve/Z377nuMht/Cujm1M+a4uea/NNCzcE3IgC0Hhw+uOjEizHpxZBRcHBkNJ+LDrQeGBVdtiRhkecnPszCltzHbw7mDuWub9i4pzt55Lxvjt27oNe74Z30m1JHW98o4Ns8YvwXHcmmOXOa3NYKe4mmatSVsoEWBCq+Lk1Qu9GNSJFf1iBj4JiCN7XabeHuP22NwJ+005fw8o1tkkWtbZ5Nc+tcZgT9t7lvw7xGhtReTIhkHS4yw9wSOIq+vkU5ExrOKvjkOYe+kT/tMuBrX0SNLYvwye9rsjuDqaBAQ7WgTHK8lRDC10xcwvpAQzvOahEj4V1AKwjzaAu5etdv0KMvrEvxcG4MB/92H0Xktiwo6TLvJRYDNvALlPhF9YoQUzYmE78MTHUL9EqV38vmdRLu7TTD1mvRDXKhVA0QoDqiB6mGlEiJwx1Hx4awmPoydjIrDhVvuPO4o7HHHuF9uS6nxZteQyk0TG6I7uI2WiK3bU/3dChSsAlO7S3DChwmPYzTO4bFWkxAufQQc8s1sCSLhd7k+AmUds6C0XYamMudsbV5rTdCXS2I6tie93Ar0u6tgxM7KOB4h0Z8fIYEpxhqJj6HODI/CBR1AuD8OFuPDcDBpDpxdsh1q1pVCzfoyOL96BxybtgR29c6B3Sg+10ET9D70bNvJXeLa2wRTz0k1HEp3HGQuQCWg9AI6jBoRcVwoU/5oSFKLxbnwmJR1yITjs5YDWfWKT+HcW59Adcmn0PBTHVz69CBYekyA3Xy+46eQ1clvqkRuMnphjw0LqeWACE0QBKrfVQGNsBxU+GoV8ybC8FsvtN+cxRwtvqfv41CKR+fY9GVwq7YOyp3FMdphSIH9w2fzpr7O+huUd3mAPy1H91jQI+kzid1k+2ICq+x2kYAolkB6z+PYwUzBaoojhXK/t7VvPj6BUnoCM4qhoe4Gh9zVeyK+ExP48Wmsb4CjUxbz94OadXSPT/o8fEViC5vtaSrQdpGkA7cHJDidqIlmtXPS73Gb2GJhLjpC8gnYrt2EL4KnQaX/E1DhOxnOLt0Ot22N8HnQVLBgQw6vR5WacuolusHQoVdn8/w/JTbtJkKdQ/EGNKCmmMa4VxoewqpTY+HqqmKo/+oA2GrO82Ow12uSw8V5A3hsaJfZ7dtw82QN3Dh5AW6evgjXj56FIw/Og/JuD4rdb+VLZPcEzFMj1savzYav0qO13bMHlMCxg6VUHAoXHkrl0I5sX+RMh4vbPYHrN+HLsOnwRdA01FR+jCwEj8eqtc8oiX4AcvgOPTubI94ZD5GoaXPHaGBncVftoYXOKg0LZtai1+B2XZ3EFVZjZfDR17dghaUePh473+HitLOqgQbrNfxkTgSLy0P874IaJ3jxFXIs7W+Ba7xXftjGLBa+MRsiNj4AnzwcIwFDGPfDlUI4NMVn0F9ZuUwiC9t++BZMXXsdoguuwJAXr3L/5PjNDhfnL3H7TPh+dgkwvHavRy5vgv9lxvG7wZO0z6j/vKTDYRuyGMFTI3mvpwpYCX1mKEGjVxoWArVFrwpqtBrrbZiyRoBHvXgFolFRFKPSZx53uDjtcHnX8XBk/Fy4uKlS7Dg14GhuK3Jv18XMj0/o+kwWig2Eb8iGMBT5JVNi2ZmhQQx3mgNTfFrm1dljmDo2BD+usE4DJkW+0CTKS6LmtgSQZ3tXz0fwWz/+jmfdkb7NzABjl7ZGQ/dIU1bY+ixorthVmfBdfAg7HUPg1EQwkD8dE8iufbSVw5M9sfoaglp1QnCEjtDV0mYcg/K+Lb9GHJqODH1pVN5sjiPt9ZgIN7aFQl6aS76h76NBhaFvZ4JQFvfUwOC3x7FXZ4zQoKtigqBqaBBUPzBGogNswzNPoI4lmlCaNuGTFiDNge+1gfNzY8H2uT8snNmnyDBgzjDL4HWZELJuHNM3EbIug1F93+gw4PBSl994ReIDjF14FcKftzYJQe3yZnomfYNDoPvRqZlJYKscxGyV/rDpFY+thoAFyVWD140DRwpZm8EmzktmVdEB7BSqakgg/HxoP4c/fqERwhCKRHAqvrNqITd3F+zwnOwQ7k6q9M6B/xRFI7wfwvuxxsqBcPID7ypD8NqxbPBaBEaFcGXwmOoUU21bVjhv4BQ2oF7e8qMNEIpAXM9JjyJQ4fU1fd0KiX88AcuiX3YI6kjfjk2HG1uDwFbhy2wVftw3VvriL1ZvqyFkTQYEr0FY9K0peVEqnIryZycjB9Enm1tx+c8wGMGVFKxdzUHMm5Xx+Mn7YA4eq49TXoEDsU9Chc/vocKcA/vDx8M3aWPZqRkJcLkkHAjWVuHDGisGQGOFL895jN4QtCadBSOkvcZC8GoUxkGr01kgqmjyUDgZ6a81sKzspganV8gd8uZjqkb3UkagTbBKPkKVA2gcbHu98Qmgx9gQsCTFGrg6jQURMIpi8kGr0nlO9cBVaWxIcSociQ3EH2nVfKGtX9VDyLO1EPzsZe4JhHt93MyrucFU09XL8Dhys13lUARr22vGRrwx95YNYIw17kXMawbf1xOrCJIUgKAaOHolqpPmzIqFmwf38bXO4x8wAhIScI7VfKzl3GM1jfye7MoXHKoR4QiwSV6Mak11L0Y68V6/KoPHHyK2BK5Mx10WsIEr0+zigJWpjMTrOO/gByV8MbL8lVchCAGCEEr4+9eYBVfk3QBun/wrwvVHUHshLNj2eCI0CWOZly4yWQxuOYGFAk7A8mZkTvJfkYINkE9lpJzCLLkcwJZDtyDwmcsQiCBcGBMUr91Fat6WQ/XybgCN+4choAfuNgGS9yBoguW58FJYXzjdpcjgMqxfPkFy0BWpQOLNrFASNSGR76s5IpcEmLSiDgIQRImgAp75SQPVj9nPuYzXXpV3weNz8X0FKtUPgfuiyHtAI69RjvFeocw45yxDu05ORg5XkgqDSsbwJvx5jE2h14tqNCf53UlQd+s6X7i69jaMet0K/ghN4P5/Eb4pvqzVaI6qjZpvhWp8j8jq6q/j7scQrADd7c5j8o16z9VXjrszs6mdmf+c9nwy2uJfkiJBU2DQ8jEIj/lyVRN1nsvavM+L+eJk1EQe7ibBtZBsQK9cnEvXKLvyA559DkVwboxrjzvVdLkbNuGODYr6oZW9DnN4MmOy16xBCKY08K3RrCkfY1fnY2+J2uKD6yWCsM0H62Hka7UwECEHoZRXyi25Apt1Z55s05FVUGuh46EB62RCaH0u1IjKTXGeJPENhrbOTkbfwiSrH8KROKCEJD9QisbI62v0JOgI6O3Y+UbY+d0tWLTzBiwuvYGN/Wy342R19ddgXmUxvL8tAKH60C6jN8nYhJAUK/XBvA/YdvVmJBrTjo8y1wyfAgU1sBhhi0exgcWjMUZhzVfmvsvQy9xPjidseIxtOv5PiXZ3+/L815Cw/jGWsDIeYRFMaVcvBERpeW8uCY/qSQ3Aqj93WyOxm4yegs+CxFoF5rcMRZ7Ho+xygtZyGpN54vrHYV5FMQc8V/ejxAUeU23R/rchcnW2uBavO70TvyoaWC/0JF1sodhujMvL1NZ+95X1GOtTgDvMFxiwLJlp4NwriXzAUhrnT0SLqe67VIhqyotxfW0ke/qdCIRxxeNAYK4EKiAtPWRMcrX3OPZCvnOBxHVsnnNiDisIJQXvuzRZSj/ePNfX1Pxk8FkyksNTHFGcCKd34MsooTighSBdsSa8zWJkvGbpgTkK/Yl3u5+SmK2bk6uz2Xt+vHXAkmRQokX1nmCET2IKjLxQEh9Tap4PWDISCt/zR7geCEtgRtZgccGcZJQ1F0a+obw7r5Eube9uNbd2dJpbtyFu+d6LkxhJLSqE8WL0JMx90DfNEWOUa3X0FOuvi1seK6Ga4ETsIoFdwKb5bgxj7rNi22dLvHsz1zSfF2lxR/JelKhBavVFSS3mKZlxPl1Dem8z/lQmMAVo6Y7gwgvYrgjdjZoSwvj5vI4vSqz7M2OauYCDoQSE8CQFZn4T40XUVBKXNi5z5Uk5q6I4kF6NFoK1r9nKuzBeL+8KL0xqf+eX9m7WObhXttercVYE1UC830yC/m8mIHwCo1jVvHEO1UmU0zX6/PRn+FIiHIHZqwuqM9a7QENZJ2ZDXdrW2ZqX4pQvMX6dOfVwNnu8EFPFAYsQvEh6zDkkxv2L4lFiTJM2Hs9mrwsWcBy0MxAkBxc14cs6kYcDJc6HzaY29/bC3o+5pPYvUGBeCGUuSuCgXoUUC6/i/oVijBS7dCjuPn5dCFTASjlr0LayjuzShx2sz+c5/bLzfq9GT6PnxEFrCJQg9fJcOII34Fk4go9hzOsr/oH/DURABCZoodKOWnzpw/a1z+e1KzB2aWOUy/zvjRrpGu2W7/5U5GEC58BvxGsStXgYvmQowTeJwEs7MBSUvtHeMv3BdrP+r+COjJqhl92Y7VPYe1qIpe9zQ6qoCY8Fcezv7/fDHXay/rDRqeqDvzptWTCtXWFuSptJvw20wfBfpYs/kG9KpA8AAAAASUVORK5CYII=" InformativeScreenshot="f72059fe6c7d68122114fb8ad82f3034.png" Selector="&lt;html app='chrome.exe' title='Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ WatchFaces Smartwatch Price in India - Buy Fastrack Revoltt FS1|1.83 Display|BT Calling|Fastcharge|110+ Sports Mode|200+ WatchFaces Smartwatch online at Flipkart.com'/&gt;" Url="https://www.flipkart.com/fastrack-revoltt-fs1-1-83-display-bt-calling-fastcharge-110-sports-mode-200-watchfaces-smartwatch/p/itmab38b5cb1e3fb?pid=SMWGN4YEWGNZ2GGM&amp;lid=LSTSMWGN4YEWGNZ2GGMLUF0DF&amp;marketplace=FLIPKART&amp;store=ajy%2Fbuh&amp;srno=b_1_1&amp;otracker=browse&amp;fm=organic&amp;iid=en_lAjZMeqCzMmH3zoaO1dJfmLV_tgmPITG_UZQoEEEECys5kmztuRpFAtGHEiMEvAwhMJcFfDk-Q6SomqxQLHh4PUFjCTyOHoHZs-Z5_PS_w0%3D&amp;ppt=browse&amp;ppn=browse&amp;ssid=krgr67gpts0000001729390223079" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+    </ui:InterruptibleWhile>
+  </Sequence>
+</Activity>
